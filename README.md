@@ -23,7 +23,7 @@
 게시판 글 정렬(계획 당시에 없었음) 추가 <br>
 
 ## 다이어그램
-![erd](https://github.com/jsw0902/kh_semi_2024/blob/main/readmeimg/erd.png)<br>
+![erd](https://github.com/jsw0902/semi_project_2024/blob/main/readmeimg/erd.png)<br>
 
 ---
 
