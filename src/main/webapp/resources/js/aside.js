@@ -8,7 +8,7 @@ const totalItems = document.querySelectorAll('.rank-item').length;
 function moveUp() {
     index++;
     rankBox.style.transition = 'transform 0.3s ease-in-out'; // 빠른 이동
-    rankBox.style.transform = `translateY(-${itemHeight * index}px)`;
+    rankBox.style.transform = 'translateY(-${itemHeight * index}px)';
 
     if (index === totalItems - 1) {
         // 마지막 항목에 도달하면 초기화
@@ -40,7 +40,7 @@ searchRank.addEventListener('mouseleave', () => {
     const currentTranslateY = matrix.m42; // Y축 변환 값 (px 단위)
     index = Math.round(-currentTranslateY / itemHeight);
 
-    rankWrapper.style.height = `${itemHeight}px`; // 높이 원래대로
+    rankWrapper.style.height = '${itemHeight}px'; // 높이 원래대로
 
     // 애니메이션 재개
     intervalId = setInterval(moveUp, 2500);
