@@ -36,10 +36,10 @@ $('#nextBoard').click(function(e) {
 	e.preventDefault();
 	const { reqPage, boardId } = getCurrentParams();
 	const nextBoardId = boardId + 1;
-	const maxBoardId = 10; // 실제 최대 게시판 ID로 변경하세요
+	const maxBoardId = 8; // 실제 최대 게시판 ID로 변경하세요
 
 	if (nextBoardId <= maxBoardId) {
-		const newUrl = `/notice/list?reqPage=1&boardId=${nextBoardId}&sort=latest`;
+		const newUrl = '/notice/list?reqPage=1&boardId=${nextBoardId}&sort=latest';
 		window.location.href = newUrl;
 	} else {
 		swal({
