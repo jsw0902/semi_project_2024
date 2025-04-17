@@ -39,7 +39,7 @@ $('#nextBoard').click(function(e) {
 	const maxBoardId = 8; // 실제 최대 게시판 ID로 변경하세요
 
 	if (nextBoardId <= maxBoardId) {
-		const newUrl = '/notice/list?reqPage=1&boardId=${nextBoardId}&sort=latest';
+		const newUrl = `/notice/list?reqPage=1&boardId=${nextBoardId}&sort=latest`;
 		window.location.href = newUrl;
 	} else {
 		swal({
